@@ -1,3 +1,55 @@
+/* ################## Coustem CSS ################## */
+.container {
+    display: flex;
+    width: 90%;
+}
+.text-title {
+    background-image: url(./Images/title-image-text1.webp);
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    width: 10%;
+    position: relative;
+    width: 20rem;
+    height: 300px;
+}
+
+.text-title2 {
+    background-image: url(./Images/title-image-text2.webp);
+    background-repeat: no-repeat;
+    background-position: 0 bottom;
+    width: 10%;
+    position: relative;
+    width: 20rem;
+    height: 300px;
+}
+.text-title p , .text-title2 p{
+    font-size: 3rem;
+    padding-top: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+.text-title a, .text-title2 a {
+    text-decoration: none;
+    background-color: #2874f0;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-weight: 550;
+    position: absolute;
+    top: 13rem;
+    text-align: center;
+    margin-left: 4rem;
+}
+.text-title2 a {
+    top: 15rem;
+}
+
+.row{
+    width: 80%;
+    margin: 1rem 5rem;
+    justify-content: space-between;
+}
+
+/* ################## Bootstrap CSS ################## */
 body {
     font-family: "Open Sans", sans-serif;
 }
@@ -83,7 +135,7 @@ img:hover{
     text-align: center;
 }
 .carousel .thumb-content {
-    padding: 15px;
+    padding: 50px;
 }
 .carousel .carousel-control {
     height: 100px;
@@ -145,4 +197,61 @@ img:hover{
 .star-rating i {
     font-size: 14px;
     color: #ffc000;
+}
+
+/* ################## Media Query ################## */
+@media (max-width: 750px) {
+    .text-title p , .text-title2 p{
+        font-size: 2rem;
+        padding-top: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .text-title a, .text-title2 a {
+        text-decoration: none;
+        background-color: #2874f0;
+        color: #fff;
+        padding: 1rem 1rem;
+        font-weight: 550;
+        position: absolute;
+        top: 10rem;
+        /* text-align: center; */
+        margin-left: 2rem;
+    }
+    .text-title2 a {
+        top: 15rem;
+        font-size: 2rem;
+    }
+    .text-title2 a {
+        text-decoration: none;
+        background-color: #2874f0;
+        color: #fff;
+        padding: 0.8rem 0.5rem;
+        font-weight: 550;
+        position: absolute;
+        top: 13rem;
+        text-align: center;
+        margin-left: 1.8rem;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width: 768px) {
+    .text-title2 a {
+        text-decoration: none;
+        background-color: #2874f0;
+        color: #fff;
+        padding: 0.8rem 0.5rem;
+        font-weight: 550;
+        position: absolute;
+        top: 15rem;
+        text-align: center;
+        margin-left: 1.8rem;
+        font-size: 1.5rem;
+    }
+    .text-title2 p{
+        font-size: 2.1rem;
+        padding-top: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
 }
