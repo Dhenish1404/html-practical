@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+}
+
+/* ####################  Utility Classes  ################ */
+.light-yellow {
+    color: #ffe500;
+}
+
+.bg-blue {
+    background-color: #2874f0;
+}
+
+/* ####################  Navbar  ################ */
+nav {
+    background-color: #2874f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image {
+    width: 75px;
+    height: 20px;
+    display: inline;
+}
+
+.plus-image {
+    width: 10px;
+    height: 10px;
+}
+
+.logo p {
+    color: #fff;
+}
+
+.search-menu {
+    width: 30rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 1rem;
+    padding: 0.3rem 1.6rem;
+    font-size: 1.1rem;
+    color: #2874f0;
+}
+
+.search-menu input {
+    width: 17rem;
+    border: none;
+    font-size: 0.9rem;
+}
+
+.login-button {
+    text-decoration: none;
+    color: #2874f0;
+    background-color: #fff;
+    padding: 0.3rem 2.5rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+.navlink {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    font-weight: 800;
+}
+
+/* ################## Product Header  ################# */
+header {
+    width: 100%;
+    height: 110px;
+    margin-top: 1rem;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    background-color: #fff;
+}
+
+.products {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.product-img-style {
+    width: 64px;
+    height: 64px;
+}
+
+.products a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+}
+
+.products a:hover{
+    color: #2874f0;
+}
+
+a .product-text-style {
+    padding-left: 0.5rem;
+}
+
+/* ################## Carosul Section  ################# */
+
+section {
+    margin-top: 0.5rem;
+    width: 90%;
+    margin: 0.5rem auto;
+}
+/* ################## Product Section  ################# */
+
+.produces-items {
+    width: 90%;
+    height: 250px;
+}
+
+.iframe-home {
+    margin-top: 2rem;
+}
+
+/* ################## Footer Section  ################# */
+.main-footer {
+    width: 100%;
+    height: 50vh;
+}
+.upper-content {
+    width: 100%;
+    height: 80%;
+    background-color: #172337;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 1px solid black;
+}
+
+.upper-content a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.8rem;
+    padding-bottom: 0.2rem;
+}
+.upper-content a:hover {
+    border-bottom: 1px solid #fff;
+}
+footer h5 { 
+    color: #878787;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding-top: 2rem;
+}
+
+.about-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-footer {
+    display: flex;
+    flex-direction: column;
+}
+.policy-footer {
+    display: flex;
+    flex-direction: column;
+}  
+
+.social-footer { 
+    display: flex;
+    flex-direction: column;
+}
+
+.email-footer p {
+    color: #fff;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.address-footer p {
+    color: #fff;
+    font-size: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+.address-footer span {
+    color: #2874f0;
+}
+
+footer hr {
+    margin-top: -6rem;
+    color: #878787;
+}
+
+.lower-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lower-content a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.fa-bag-shopping {
+    color: #ffe500;
+    padding-right: 0.5rem;
+}
+
+.fa-circle-star { 
+    color: #ffe500;
+    padding-right: 0.5rem;
+}
+
+.fa-gift {
+    color: #ffe500;
+    padding-right: 0.5rem;
+}
+
+.fa-question {
+    color: #ffe500;
+    padding-right: 0.5rem;
+}
+.lower-content p {
+    color: #fff;
+}
+
+.fa-cc-visa {
+    color: #fff;
+}
+
+/* #################  Media Query   ########################*/
+@media (max-width: 1024px) {
+    .navlink {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-button {
+        display: none;
+    }
+    .product-img-style {
+        width: 50px;
+        height: 50px;
+    }
+    footer h5 {
+        color: #878787;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        padding-top: 2rem;
+    }
+    .upper-content a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.6rem;
+        padding-bottom: 0.2rem;
+    }
+    .email-footer p {
+        color: #fff;
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+    }
+    .address-footer p {
+        color: #fff;
+        font-size: 0.6rem;
+        margin-bottom: 0.2rem;
+    }
+    .lower-content a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+    .lower-content p {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.8rem;
+    }
+    
+}
+@media (max-width: 750px) {
+    .products {
+        width: 80%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto;
+    }
+    .lower-content a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.7rem;
+    }
+    .lower-content p {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.7rem;
+    }
+    
+}
+@media (max-width: 480px) {
+    .login-button{
+        display: none;
+    }
+
+    .products {
+        width: 50%;
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+    }
+
+    .product-img-style {
+        width: 40px;
+        height: 40px;
+    }
+    footer h5 {
+        color: #878787;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+        padding-top: 2rem;
+    }
+    .upper-content a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.6rem;
+        padding-bottom: 0.175rem;
+    }
+    .lower-content a {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.6rem;
+    }
+    .lower-content p {
+        text-decoration: none;
+        color: #fff;
+        font-size: 0.6rem;
+    }
+    .fa-bag-shopping {
+        color: #ffe500;
+        padding-right: 0.3rem;
+    }
+    
+    .fa-circle-star { 
+        color: #ffe500;
+        padding-right: 0.3rem;
+    }
+    
+    .fa-gift {
+        color: #ffe500;
+        padding-right: 0.3rem;
+    }
+    
+    .fa-question {
+        color: #ffe500;
+        padding-right: 0.3rem;
+    }
+    .upper-content {
+        width: 100%;
+        height: 80%;
+        background-color: #172337;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+    }
+    .search-menu input {
+        width: 8rem;
+        border: none;
+        font-size: 0.7rem;
+    }
+    .logo-image {
+        width: 50px;
+        height: 15px;
+        display: inline;
+    }
+    nav p{
+        font-size: 0.8rem;
+    }
+    .cards{
+        display: none;
+        opacity: 0;
+    }
+}
